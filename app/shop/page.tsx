@@ -8,9 +8,9 @@ export default function Page() {
     const items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     return (
         <div className='grid grid-cols-4 gap-y-7'>
-            {items.map(() => {
+            {items.map((_, index) => {
                 return (
-                    <Link href={'/products/1'} className='flex flex-col items-center justify-center w-[220px]'>
+                    <Link key={index} href={'/products/1'} className='flex flex-col items-center justify-center w-[220px]'>
                         <Image
                             width={220}
                             height={220}

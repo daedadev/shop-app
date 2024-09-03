@@ -41,9 +41,10 @@ export default function Page({ params }: { params: { id: string } }) {
                     src={selectedImage.src}
                 />
                 <article className='flex flex-col gap-y-4'>
-                    {selectedItem.images.map((image) => {
+                    {selectedItem.images.map((image, index) => {
                         return (
                             <Image
+                                key={index}
                                 className='hover:cursor-pointer'
                                 onClick={() => setSelectedImage(image)}
                                 src={image.src}
