@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function page() {
+export default function Page() {
     const items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     return (
         <div className='grid grid-cols-4 gap-y-7'>
