@@ -9,6 +9,7 @@ export default function page({ params }: { params: { id: string } }) {
         src: '',
         alt: '',
     });
+    const [modalOpen, setModalOpen] = useState(false);
 
     const objectData: objectDataType = {
         '1': {
