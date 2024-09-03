@@ -4,7 +4,7 @@ import { objectDataType } from '@/types/types';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
-export default function page({ params }: { params: { id: string } }) {
+export default function Page({ params }: { params: { id: string } }) {
     const [selectedImage, setSelectedImage] = useState({
         src: '',
         alt: '',
