@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function MainHeader() {
     return (
-        <header className='mx-6 md:mx-14 max-w-[1030px] w-full py-[30px]'>
+        <header className='px-[30px] max-w-[1030px] w-full py-[30px]'>
             <section className='flex flex-row justify-between items-center'>
                 <article>
                     <h1 className='text-[90px] font-extrabold italic leading-none'>FTB</h1>

@@ -11,3 +11,10 @@ export type objectDataType = {
         details: string;
     };
 };
+
+export type cartItemDataType = {
+    id: string;
+    price: number;
+    size: string;
+    image: imageType;
+};

@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Page() {
     const items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     return (
-        <div className='grid grid-cols-4 gap-y-7'>
+        <section className='grid grid-cols-4 gap-y-7 mb-16'>
             {items.map((_, index) => {
                 return (
                     <Link key={index} href={'/products/1'} className='flex flex-col items-center justify-center w-[220px]'>
@@ -22,6 +22,6 @@ export default function Page() {
                     </Link>
                 );
             })}
-        </div>
+        </section>
     );
 }
